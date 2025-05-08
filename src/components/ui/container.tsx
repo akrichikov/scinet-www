@@ -4,7 +4,7 @@ export type ContainerProps = {
   children: React.ReactNode;
 };
 
-const Container: React.FC<ContainerProps> = ({ children }) => {
+const Container = ({ children }: ContainerProps) => {
   return <div className="container 2xl mx-auto w-full">{children}</div>;
 };
 

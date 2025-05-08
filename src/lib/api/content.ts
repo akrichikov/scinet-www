@@ -1,5 +1,5 @@
-import { ArticleType } from "@/lib/types/content/article";
-import { PodcastType } from "@/lib/types/content/podcast";
+import { ArticleType } from "@/lib/types/article";
+import { PodcastType } from "@/lib/types/podcast";
 
 
 export const getArticles = async (tnt: string): Promise<ArticleType[]> => {

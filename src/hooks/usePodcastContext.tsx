@@ -1,5 +1,5 @@
 import { createContext, useContext } from "react";
-import { PodcastContextType } from "@/lib/types/content/podcastContextType";
+import { PodcastContextType } from "@/lib/types/podcastContext";
 
 export const PodcastContext = createContext<PodcastContextType | null>(null);
 

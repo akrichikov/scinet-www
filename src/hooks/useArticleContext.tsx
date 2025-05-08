@@ -1,5 +1,5 @@
 import { createContext, useContext } from "react";
-import { ArticleContextType } from "@/lib/types/content/articleContextType";
+import { ArticleContextType } from "@/lib/types/articleContext";
 
 export const ArticleContext = createContext<ArticleContextType | null>(null);
 

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { getArticles, ArticleType } from "@/app/functions/getArticles";
 import { ArticleContext } from "@/hooks/useArticleContext";
 
-type ArticleContextProviderType = {
+export type ArticleContextProviderType = {
   children: React.ReactNode;
 };
 

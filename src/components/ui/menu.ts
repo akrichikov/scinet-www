@@ -1,4 +1,4 @@
-import { MenuItem } from "@/lib/types/content/menuItem";
+import { MenuItem } from "@/lib/types/menuItem";
 
 const menu: MenuItem[] = [
   {
