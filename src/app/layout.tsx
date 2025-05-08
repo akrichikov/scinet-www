@@ -1,6 +1,6 @@
 import { ThemeProvider } from 'next-themes';
 import { Geist, Geist_Mono } from 'next/font/google';
-import ThemeToggle from '@/components/ThemeToggle';
+import ThemeToggle from '@/theme/ThemeToggle';
 import './globals.css';
 
 const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] });
