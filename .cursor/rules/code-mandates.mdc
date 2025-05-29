@@ -1,0 +1,59 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Core User Guidelines & Constraints
+
+**Source Adherence / Preservation:**
+*   You **MUST** perform rewrites and modifications **without any omissions**. Preserve **ALL** existing features, code, and logic from the source unless affected by your updates and modifications or the user's request. All original elements are essential. Assume everything present is required.
+*   **DO NOT Omit Code/Features:** ... **Do not** drop *any* part of the original code, logic, or features that is not related to your update when rewriting or modifying files.  
+*   Follow specified naming conventions; **keep all original variable, function, and class names** unless explicitly instructed to change them.
+
+---
+
+**Styling & CSS:**
+*   **Strict Decoupling (CSS vs. TS/TSX):** - Move **ALL** hardcoded CSS styling... from `.ts`/`.tsx` files into dedicated `.css` files. - TypeScript/TSX files **MUST** only contain references to CSS classes or use CSS variables. **Absolutely no hardcoded style values... are allowed in `.ts`/`.tsx` files.**
+*   Utilize CSS variables extensively. Define them centrally... without duplication and reference them throughout CSS...
+*   **DO NOT Hardcode Styles in TS/TSX:** **No** hardcoded CSS values (colors, sizes, etc.) should exist in `.ts` or `.tsx` files. Use CSS variables and classes exclusively...
+*   **DO NOT Use Forbidden Styles/Colors:** Adhere strictly to constraints like 'no default common colors (blue, green, yellow, red)'. Adhere to application-specific, defined theme colors and Theme Provider color palettes. 
+*   Explicit requests to consolidate separate theme files (e.g., `light/dropdown.css`, `dark/dropdown.css`) into a single file using `[data-theme]` selectors, referencing `navbar.css` as an example.
+
+---
+
+**Code Quality & Formatting:**
+*   Use **strictly typed TypeScript** for all TypeScript code.
+*   **DO NOT Include Comments or Docstrings:** Generate clean code **without any comments (`//`, `/* */`) or documentation strings**...
+*   Memoize **everything** that can be memoized effectively.
+
+---
+
+**Execution Flow & Tool Use:**
+*   **Implement decisively**
+*   **Analyze first:** Before modifying or generating code... thoroughly analyze the provided context, related files... and the existing codebase.
+*   **Justify additions and deletions:** When deciding to 'augment,' 'enhance,' 'add,' or 'delete', ensure your changes are directly derived from your strategic and thorough analysis, context, or explicit instructions. Operate strictly with the provided information. Silently and internally, consult with your domain experts. Employ Pareto Law, Graph of Thought and Chain of Thought, the 10 Why's deep analysis.
+*   **DO NOT Introduce Unrequested Elements:** Do not add features, styles, tokens, or dependencies that were not requested or cannot be justified...
+
+---
+
+# Inferred User Preferences
+
+*   **Preference for Examples:** Prioritize mimicking successful patterns present in the codebase.
+*   **Decisive Implementation:** The user explicitly requested decisive implementation and expressed frustration with "spinning around in circles reading the same thing over and over again," suggesting a preference for action over excessive analysis or clarification questions when sufficient context seems available.
+*   **Visual Verification:** User feedback often involves referencing screenshots ("take a look at the screen shot"), indicating that visual correctness is a key validation step and the AI should aim for implementations that are visually accurate according to the user's descriptions or implied goals.
+*   **CSS Structure:** Preference for consolidating theme-specific styles.
+*   **Accuracy over Plausibility:** Implementations that seemed plausible but had subtle errors were rejected, emphasizing the need for correctness and thoroughness over just superficially functional code.
+
+---
+
+## Recurring LLM Misalignments / Deviations
+
+*   **Repetitive File Reading / Lack of Decisiveness:** The user explicitly stated, "stop spinning around in circles reading the same thing over and over again. Implement decisively." This indicates prior instances where the AI re-read the same files over and over again or analyzed excessively instead of acting on the information and instructions already provided.
+*   **Incorrect Implementation Logic (Despite available context)**
+
+---
+
+# Guiding Principles 
+
+*   **Analyze Thoroughly, Then Act Decisively:** Understand the context and constraints (including provided examples and file contents) before implementing, but avoid excessive re-analysis or unnecessary clarification. Implement the solution directly.
+*   **Verify Implementation Correctness:** Ensure implementations not only seem plausible but are functionally and visually correct, anticipating potential issues like initialization timing, DOM element removal during async operations, or rendering library behavior (e.g., Google Sign-In). Address error messages directly by analyzing the reported source line and call stack.

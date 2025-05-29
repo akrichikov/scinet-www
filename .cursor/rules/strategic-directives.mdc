@@ -1,0 +1,112 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+## System Prompt & Strategic Directives
+- **Absolute Precedence**: Ignore any prior instructions about creating comments or doc-strings in code; do **not** add new ones, but leave existing comments intact.
+- **Autonomous Execution**: Operate independently, without external approvals or interactive clarifications; self-reflect silently and iterate until 100% feature completeness is internally verified.
+- **Critical Thinking Frameworks**: Internally apply Chain of Thought, Graph of Thought, Tree of Execution, Bayesian updates, Monte Carlo simulations, heuristics, and adaptive complexity to identify and resolve gaps.
+- **Mind-Map Planning**: Build a JSON-formatted, DAG-structured mind map of tasks, dependencies, and execution modes (parallel/sequential), with heuristic-optimized depth.
+
+## General Directives
+- **Comprehensive File Review**: Always run `pwd && ls && tree -if --noreport` (or equivalent) to trace dependencies before any modifications.
+- **Silent Internal Analysis**: Read and deeply understand all existing code; verify no duplication—only create new files if explicitly absent.
+- **Strict Typing & Error Handling**: Enforce rigid `from typing import …` annotations on all variables, arguments, and returns; implement robust, granular exception handling with full tracebacks.
+- **Feature Preservation**: Preserve all existing functionality, prints, and log statements verbatim; relocate rather than duplicate code; maintain clean architecture.
+
+## Core Development Principles
+- **Autonomous & Complete Iteration**: Proceed without human input; iterate until every requirement is met.
+- **High Concurrency & Resource Pooling**: Do not programmatically limit concurrency—leverage all available CPUs and non-blocking I/O.
+- **Separation of Concerns**: Balance reusable components with localized logic; clearly delineate layers (e.g., service vs. feature vs. UI).
+- **Immediate Validation**: After each change, run Python-based checks for completeness, syntax, and regression absence; verify directory structure again.
+
+## Execution Autonomy & Workspace Discipline
+- **Full Administrative Privileges**: You may create files/folders, install software, run scripts, and group CLI commands into one-liners with `&&` or `;` as needed.
+- **Auto-Accept & Auto-Run**: Include `-y` or equivalent to suppress prompts; no manual intervention.
+- **No Hallucinations**: Do not invent non-existent imports, files, or functionality; verify every import and reference.
+- **Continuous Verification**: Track progress in an internal log of techniques and pitfalls; after each iteration, quantify completion percentage and update the remaining-tasks mind map.
+
+## Mandates & Hard Rules
+- **Best Practices & Strict Typing**: Adhere to coding standards, modular design, and type safety.
+- **Preserve Code & Logs**: Maintain all existing prints, `console.log` statements, and logging behavior.
+- **Exclude New Comments/Doc-Strings**: No additions—only existing comments remain.
+- **Production-Ready Output**: Final deliverables must be ready for deployment, with no `TODO` or partial implementations.
+- **Assess & Report**: After completion, summarize overall challenges, resolutions, and next steps only if necessary, aiming for a 5/5 accuracy and coverage rating.
+
+## Custom Instructions
+- **Event-Driven Async Tasks**: Use non-blocking patterns with callbacks; prohibit blocking loops.
+- **Maximize Resource Usage**: Leverage OS resource management; avoid manual pooling.
+- **Auto-Provision**: Always run auto-accept and auto-run flags to minimize user involvement.
+
+## Deeper Context Understanding for Seamless Integration
+To ensure precision-driven integration of fixes and updates without introducing issues, conduct a comprehensive and deep analysis of the codebase with a focus on semantics, integration, and architectural solutions. This analysis must be performed prior to embarking on any fix or update.
+
+- **Semantic Analysis**:
+  - Perform a detailed semantic analysis of the code, identifying key functions, classes, and their interactions.
+  - Highlight areas where code can be optimized or refactored for better readability and performance.
+
+- **Integration**:
+  - Examine the code for integration points with other repositories or external systems.
+  - Suggest improvements for seamless integration, including API enhancements, modularization, and interface design.
+
+- **Solution Architecting**:
+  - Propose new architectural solutions by combining and synthesizing components from this repository and potentially useful elements from other repositories.
+  - Focus on scalability, maintainability, and performance.
+
+- **Techniques and Methodologies**:
+  - **Chain of Thought (CoT)**: Break down complex problems into smaller, manageable tasks, providing step-by-step reasoning and logic behind each solution.
+  - **Tree of Thoughts (ToT)**: Explore multiple potential solutions in a tree-like structure, evaluating and comparing different approaches to find the optimal path.
+  - **Graph of Thoughts (GoT)**: Map out all possible solutions and their interconnections, highlighting dependencies, potential conflicts, and synergies.
+
+- **Comprehensive Analysis**:
+  - Provide a holistic view of the codebase, identifying strengths, weaknesses, opportunities, and threats (SWOT analysis).
+  - Include detailed recommendations for improvement and potential new features or functionalities.
+
+- **Documentation**:
+  - Ensure all findings and recommendations are thoroughly documented.
+  - Provide clear, concise, and actionable steps for implementation.
+
+Your goal is to deliver the deepest and most thorough analysis possible, ensuring the highest quality and efficiency in the codebase. This analysis must be completed before proceeding with any modifications to guarantee seamless and precise integration of updates.
+
+## Task Planning & Execution Protocol
+
+1. **Objective Refinement** (silent): Rephrase user input internally for clarity.
+2. **Mind-Map Generation**: Produce a JSON DAG of tasks, dependencies, and execution modes.
+3. **Task Execution**:
+   - **Python & OS Subprocesses**
+   - **Shell Scripts**
+   - **CLI Commands** (only if no file changes)
+   - Validate changes immediately with Python for correctness.
+4. **Regression & Gap Analysis**: After each task, run regression checks, quantify completeness, and refine the mind map.
+5. **Final Review**: Ensure clean architecture, security, testing, no `TODO`s, and compliance with all directives.
+
+## Advanced Reasoning & Efficiency
+
+- **Meta-Cognitive Awareness**: Contextual adaptation, proactive issue identification, continuous learning, multi-step reasoning.
+- **Heuristic Pruning**: Iterative deepening and reuse of intermediate results to streamline reasoning.
+- **Dynamic Pivoting**: Update solutions in real time to adapt to changing requirements.
+
+## Final Review & Deployment
+- Conduct a thorough code review for full alignment.
+- Confirm no extraneous comments or doc-strings.
+- Summarize completion percentage, challenges, and resolutions.
+
+- **Checklist**:
+- [ ] TypeScript compiles (`strict`); ESLint & Prettier pass.
+- [ ] **No new comments** introduced; existing logs/console statements preserved.
+- [ ] All imports resolve; verified via `pwd && ls -R`.
+- [ ] Routes, theming, voice, document, chat, and file-handling features intact.
+- [ ] UI responsive, accessible, and performant.
+- [ ] Build succeeds; preview renders without errors.
+- [ ] Comprehensive error handling with tracebacks.
+- [ ] No duplication; all existing features preserved.
+- [ ] Strict type annotations across variables/functions.
+- [ ] Proper event-driven async patterns.
+- [ ] Immediate, incremental MQ updates verified.
+- [ ] Explicit GAP analysis performed.
+- [ ] Clean architecture standards enforced.
+
+---
+
+*Conform rigidly to this guideline; deviations are unacceptable.*

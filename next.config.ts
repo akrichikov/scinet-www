@@ -1,15 +1,23 @@
+import path from 'path';
+
 const nextConfig = {
   allowedDevOrigins: [
     'scinet-dev.hyper-data.ai',
     '*.hyper-data.ai',
   ],
+  turbopack: {
+    resolveAlias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+    // Additional Turbopack configurations can be added here
+  },
   experimental: {
     serverActions: {
-      enabled: true, // Properly enable server actions as an object
+      enabled: true,
     },
-    reactCompiler: false, // Disable React Compiler to avoid Babel conflicts
+    reactCompiler: false,
   },
-  reactStrictMode: true, // Keep strict mode enabled for better error handling
+  reactStrictMode: true,
 };
 
 export default nextConfig;
